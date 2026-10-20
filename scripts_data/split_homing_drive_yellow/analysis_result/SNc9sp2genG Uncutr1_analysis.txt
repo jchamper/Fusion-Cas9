@@ -1,0 +1,39 @@
+[1] "Model summary:"
+Generalized linear mixed model fit by maximum likelihood (Adaptive Gauss-Hermite Quadrature, nAGQ =  25)
+ [glmerMod]
+ Family: binomial  ( logit )
+Formula: drive ~ 1 + (1 | group)
+   Data: dataframe
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+   1916.3    1926.8    -956.1    1912.3      1450 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-0.7672 -0.7653 -0.7641  1.3061  1.3117 
+
+Random effects:
+ Groups Name        Variance Std.Dev.
+ group  (Intercept) 0.000858 0.02929 
+Number of obs: 1452, groups:  group, 28
+
+Fixed effects:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept) -0.53608    0.05492  -9.762   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Calculate expected value:
+ 1        prob     SE  df asymp.LCL asymp.UCL
+ overall 0.369 0.0128 Inf     0.344     0.394
+
+Confidence level used: 0.95 
+Intervals are back-transformed from the logit scale 
+
+
+Compare the experiment to a null expectation value.
+ 1       emmean     SE  df z.ratio p.value
+ overall -0.536 0.0549 Inf  -9.762 <0.0001
+
+Results are given on the logit (not the response) scale. 

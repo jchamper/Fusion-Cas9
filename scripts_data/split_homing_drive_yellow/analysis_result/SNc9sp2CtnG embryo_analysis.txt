@@ -1,0 +1,18 @@
+[1] "Model skipped: Response is constant"
+[1] "drive = 0"
+[1] "nondrive = 507"
+
+
+Exact binomial test against expectation:
+
+	Exact binomial test
+
+data:  n_drive and n_total
+number of successes = 0, number of trials = 507, p-value < 2.2e-16
+alternative hypothesis: true probability of success is not equal to 0.5
+95 percent confidence interval:
+ 0.000000000 0.007249491
+sample estimates:
+probability of success 
+                     0 
+
